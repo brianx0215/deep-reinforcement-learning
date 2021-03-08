@@ -60,7 +60,7 @@ class Agent():
                 experiences = self.memory.sample()
                 self.learn(experiences, GAMMA)
 
-    def act(self, state, eps=0.1):
+    def act(self, state, eps=0.0):
         #Returns action for given state as per current policy.
 
         state = torch.from_numpy(state).float().unsqueeze(0)
