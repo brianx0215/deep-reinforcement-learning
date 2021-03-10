@@ -14706,8 +14706,9 @@ Environment solved in 627 episodes!	Average Score: 15.02
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Note">Note<a class="anchor-link" href="#Note">&#182;</a></h1><h2 id="Learning-Algorithm">Learning Algorithm<a class="anchor-link" href="#Learning-Algorithm">&#182;</a></h2><p>The project uses a double DQN to train the agent. The agent uses dqn_target to search the reward of next step and uses dqn_local to make the final decisions. There are also some other improvments are used in the project such as replay buffer and soft update.&lt;/br&gt;
-There are also many hyperparameters has been tuned in this project. Here is the final decision:&lt;/br&gt;</p>
+<h1 id="Note">Note<a class="anchor-link" href="#Note">&#182;</a></h1><h2 id="Learning-Algorithm">Learning Algorithm<a class="anchor-link" href="#Learning-Algorithm">&#182;</a></h2><p>The project uses a double DQN to train the agent. Each DQN has 4 dense layers with 2 RELU activation funcions after the first and the second layer. There are 37 input nodes along with 4 output nodes. Besides, each hidden layer has 64 nodes for training.</p>
+<p>The agent uses dqn_target to search the reward of next step and uses dqn_local to make the final decisions. There are also some other improvments are used in the project such as replay buffer and soft update.</p>
+<p>There are also many hyperparameters has been tuned in this project. Here are the final decisions:</p>
 <table>
 <thead><tr>
 <th>Hyper Prameters</th>
